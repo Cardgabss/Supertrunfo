@@ -1,0 +1,86 @@
+#include <stdio.h>
+
+struct Carta {
+    char estado;                 // Letra de "A" a "H"
+    char codigo[4];              // Código da carta
+    char nomeCidade[30];         // Nome da cidade
+    int populacao;               // Total da população
+    float area;                  // Total da área
+    float pib;                   // PIB
+    int pontosTuristicos;        // Total de pontos turísticos
+};
+
+int main() {
+    struct Carta carta1;
+    struct Carta carta2;
+
+    // Cadastro da carta 1
+    printf("Cadastro da Carta 1\n");
+
+    printf("Informe o estado (letra de A a H): ");
+    scanf(" %c", &carta1.estado);
+
+    printf("Informe o código da carta: ");
+    scanf("%s", carta1.codigo);
+
+    printf("Informe o nome da cidade: ");
+    scanf("%s", carta1.nomeCidade);
+
+    printf("Informe a população: ");
+    scanf("%d", &carta1.populacao);
+
+    printf("Informe a área da cidade: ");
+    scanf("%f", &carta1.area);
+
+    printf("Informe o PIB: ");
+    scanf("%f", &carta1.pib);
+
+    printf("Informe o número de pontos turísticos: ");
+    scanf("%d", &carta1.pontosTuristicos);
+
+    // Cadastro da carta 2
+    printf("\nCadastro da Carta 2\n");
+
+    printf("Informe o estado (letra de A a H): ");
+    scanf(" %c", &carta2.estado);
+
+    printf("Informe o código da carta: ");
+    scanf("%s", carta2.codigo);
+
+    printf("Informe o nome da cidade: ");
+    scanf("%s", carta2.nomeCidade);
+
+    printf("Informe a população: ");
+    scanf("%d", &carta2.populacao);
+
+    printf("Informe a área da cidade: ");
+    scanf("%f", &carta2.area);
+
+    printf("Informe o PIB: ");
+    scanf("%f", &carta2.pib);
+
+    printf("Informe o número de pontos turísticos: ");
+    scanf("%d", &carta2.pontosTuristicos);
+
+    // Exibição dos dados da carta 1
+    printf("\nCarta 1\n");
+    printf("Estado: %c\n", carta1.estado);
+    printf("Código: %s\n", carta1.codigo);
+    printf("Nome da Cidade: %s\n", carta1.nomeCidade);
+    printf("População: %d\n", carta1.populacao);
+    printf("Área: %.2f km²\n", carta1.area);
+    printf("PIB: %.2f bilhões de reais\n", carta1.pib);
+    printf("Número de pontos turísticos: %d\n", carta1.pontosTuristicos);
+
+    // Exibição dos dados da carta 2
+    printf("\nCarta 2\n");
+    printf("Estado: %c\n", carta2.estado);
+    printf("Código: %s\n", carta2.codigo);
+    printf("Nome da Cidade: %s\n", carta2.nomeCidade);
+    printf("População: %d\n", carta2.populacao);
+    printf("Área: %.2f km²\n", carta2.area);
+    printf("PIB: %.2f bilhões de reais\n", carta2.pib);
+    printf("Número de pontos turísticos: %d\n", carta2.pontosTuristicos);
+
+    return 0;
+}
